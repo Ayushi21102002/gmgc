@@ -1,0 +1,76 @@
+<fieldset class="custom-fieldset">
+    <legend>Upload The Documents</legend>
+    <div class="text-right">
+        <span class="text-danger font-weight-bolder">*</span>
+        <span class="text-danger font-weight-bolder">
+                        Note : Uploaded documents is less than 5 mb
+        </span><br>
+        <span class="text-danger font-weight-bolder">
+                        Note : Only Upload files of type jpg, jpeg, png, pdf
+        </span>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-horizontal form-bordered">
+                <div class="form-group row">
+                    <label class="control-label col-md-3">
+                        <span id="ContentPlaceHolder1_lblDMC">Diploma/STD 12/Graduate Marksheet : </span><span class="text-danger">*</span>
+                    </label>
+                    <div class="control-form col-md-9">
+                        <input type="file" name="ctl00$ContentPlaceHolder1$examCerti" id="ContentPlaceHolder1_examCerti" title="Upload Document only and size should be less than 5MB" class="d-block" onchange="validateFileSize(this);" accept=".pdf, .jpg, .jpeg, .png" causesvalidation="False">
+                        <span id="ContentPlaceHolder1_lblExamCertiStatus" class="font13 fontClrBlue d-none"></span>
+                        <span id="ContentPlaceHolder1_lblExamCerti" class="font13 fontClrBlue d-none"></span>
+                        <a id="ContentPlaceHolder1_linkExam" class="font13 fontClrBlue d-none"></a>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-md-3">
+                        <span id="ContentPlaceHolder1_lbllc">Leaving Certificate : </span><span class="text-danger">*</span>
+                    </label>
+                    <div class="control-form col-md-9">
+                        <input type="file" name="ctl00$ContentPlaceHolder1$leavingCerti" id="ContentPlaceHolder1_leavingCerti" title="Upload Document only and size should be less than 5MB" class="d-block" onchange="validateFileSize(this);" accept=".pdf, .jpg, .jpeg, .png" causesvalidation="False">
+                        <span id="ContentPlaceHolder1_lblLeaveCertiStatus" class="font13 fontClrBlue d-inline"></span>
+                        <span id="ContentPlaceHolder1_lblLeaveCerti" class="font13 fontClrBlue d-none"></span>
+                        <a id="ContentPlaceHolder1_linkLeaving" class="font13 fontClrBlue d-inline"></a>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-md-3">
+                        <span id="ContentPlaceHolder1_lblcc">Caste Certificate : </span><span class="text-danger">*</span>
+                    </label>
+                    <div class="control-form col-md-9">
+                        <input type="file" name="ctl00$ContentPlaceHolder1$casteCerti" id="ContentPlaceHolder1_casteCerti" title="Upload Document only and size should be less than 5MB" class="d-block" onchange="validateFileSize(this);" accept=".pdf, .jpg, .jpeg, .png" causesvalidation="False">
+                        <span id="ContentPlaceHolder1_lblcasteCertiStatus" class="font13 fontClrBlue d-inline"></span>
+                        <span id="ContentPlaceHolder1_lblcasteCerti" class="font13 fontClrBlue d-none"></span>
+                        <a id="ContentPlaceHolder1_linkCaste" class="font13 fontClrBlue d-inline"></a>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-md-3">
+                        <span id="ContentPlaceHolder1_lblic">Income Certificate : </span><span class="text-danger">*</span>
+                    </label>
+                    <div class="control-form col-md-9">
+                        <input type="file" name="ctl00$ContentPlaceHolder1$incomeCerti" id="ContentPlaceHolder1_incomeCerti" title="Upload Document only and size should be less than 5MB" class="d-block" onchange="validateFileSize(this);" accept=".pdf, .jpg, .jpeg, .png" causesvalidation="False">
+                        <span id="ContentPlaceHolder1_lblIncomeCertiStatus" class="font13 fontClrBlue d-inline"></span>
+                        <span id="ContentPlaceHolder1_lblIncomeCerti" class="font13 fontClrBlue d-none"></span>
+                        <a id="ContentPlaceHolder1_linkIncome" class="font13 fontClrBlue d-inline"></a>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="control-label col-md-3">
+                        <span id="ContentPlaceHolder1_Label1">Aadhar Card : </span><span class="text-danger">*</span>
+                    </label>
+                    <div class="control-form col-md-9">
+                        <input type="file" name="ctl00$ContentPlaceHolder1$aadharCard" id="ContentPlaceHolder1_aadharCard" title="Upload Document only and size should be less than 5MB" class="d-block" onchange="validateFileSize(this);" accept=".pdf, .jpg, .jpeg, .png" causesvalidation="False">
+                        <span id="ContentPlaceHolder1_lblAdharCardStatus" class="font13 fontClrBlue d-inline"></span>
+                        <span id="ContentPlaceHolder1_lblAdharCard" class="font13 fontClrBlue d-none"></span>
+                        <a id="ContentPlaceHolder1_linkAadhar" class="font13 fontClrBlue d-inline"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</fieldset>

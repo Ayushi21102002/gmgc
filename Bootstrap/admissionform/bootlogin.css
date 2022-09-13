@@ -1,0 +1,32 @@
+#log{
+    border: 2px solid grey;
+    margin-top: 200px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form-group label{
+    font-size: 20px;
+    color: white;
+    font-weight: 20px;
+}
+.check label{
+    font-size: 20px;
+    margin-top: 10px;
+    color: whitesmoke;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+#submit {
+    margin-top: 20px;
+    width:100%;
+}    
+img{
+    width: 100px;
+    margin-left: 35%;
+    border-radius: 100%;
+}
+

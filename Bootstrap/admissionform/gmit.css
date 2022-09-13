@@ -1,0 +1,31 @@
+/* .container-fluid{
+    border: 2px solid black;
+}
+.row{
+    border: 2px solid red;
+}
+.col{
+    border: 2px solid yellow;
+} */
+.col label{
+    font-weight: bold;
+    /* font-style:initial; */
+}
+.form-group label{
+    font-weight: bold;
+    font-size: 17px;
+}
+.col-md-6{
+    padding-left: 30px;
+    margin-bottom: 15px;
+    /* border: 2px solid black; */
+
+}
+#submit{
+    margin-left: 15px;
+    
+}
+.check label{
+    font-weight:bold;
+    margin-left: 20px;
+}

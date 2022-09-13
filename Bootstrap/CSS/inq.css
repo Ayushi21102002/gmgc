@@ -1,0 +1,140 @@
+#reset1 {
+    margin-left: 5px;
+  }
+
+  #reset {
+    margin-top: -20px;
+    margin-left: 5px;
+  }
+
+  #helpId {
+    margin-left: 3px;
+  }
+
+  label {
+    margin-left: 3px;
+  }
+
+  h4 {
+    margin-left: -60px;
+  }
+
+  #A {
+    margin-left: 50px;
+  }
+
+  #B {
+    border: 0;
+  }
+
+  .logo-size {
+    border-bottom: 1px solid #ddd;
+    float: left;
+    width: 100%;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(54, 54, 54, 0.17);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(54, 54, 54, 0.17);
+    box-shadow: 0px 2px 3px 0px rgba(54, 54, 54, 0.17);
+    padding: 10px 0px;
+  }
+
+  .logo-size img {
+    margin: 0 auto;
+    margin-top: 0px;
+    width: auto;
+    height: 80px;
+    margin-top: 0px;
+    display: inline-block;
+
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  .headding5 {
+    float: left;
+    width: 100%;
+    font-family: Roboto-Light;
+    font-size: 25px;
+    margin: 20px 0px;
+    font-weight: 600;
+    color: #1c508c;
+  }
+
+  element {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .left-intrsution {
+    float: none;
+    padding: 20px;
+    padding-top: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 98%;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 0px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(54, 54, 54, 0.17);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(54, 54, 54, 0.17);
+    box-shadow: 0px 1px 4px 0px rgba(54, 54, 54, 0.17);
+  }
+
+  .left-intrsution h3 {
+    font-family: roboto-medium;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px dashed #1c508c;
+    float: none;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    background: #1c508c;
+  }
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+  }
+
+  .pointofintruction {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+
+    margin: 20px 0px;
+  }
+
+  .white {
+    margin-top: 20px;
+  }
+  .box {
+    color: #fff;
+    padding: 20px;
+    display: none;
+    margin-top: 20px;
+  }
