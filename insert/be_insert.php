@@ -1,6 +1,9 @@
 <?php
     $conn = mysqli_connect('localhost', 'root', '', 'gmgc');
-
+    if(!$conn)
+    {
+        echo "error in connection";
+    }
     if (isset($_POST['submit'])) {
        $s_course = $_POST['s_course'];
        $s_branch = $_POST['s_branch'];
@@ -19,18 +22,15 @@
        $s_jee = $_POST['s_jee'];
        $email = $_POST['email'];
 
-$sql = "INSERT INTO`be_inquiry`(`s_course`,`s_branch`,`s_name`,`s_address`,`s_contact`,`p_contact`,`s_gender`,`dob`, 
-`s_ssc`,`ssc_seatno`,`s_hsc`,`hsc_seatno`,`hsc_p_year`,`s_gujcet`,`s_jee`,`email`) VALUES ('$s_course','$s_branch',
-'$s_name','$s_address','$s_contact','$p_contact','$s_gender','$dob','$s_ssc','$ssc_seatno','$s_hsc','$hsc_seatno',
-'$hsc_p_year','$s_gujcet','$s_jee','$email')";
+$sql = "INSERT INTO be_inquiry(s_course,s_branch,s_name,s_address,s_contact,p_contact,s_gender,dob,s_ssc,ssc_seatno,s_hsc,hsc_seatno,hsc_p_year,s_gujcet,s_jee,email) VALUES ('$s_course','$s_branch','$s_name','$s_address','$s_contact','$p_contact','$s_gender','$dob','$s_ssc','$ssc_seatno','$s_hsc','$hsc_seatno','$hsc_p_year','$s_gujcet','$s_jee','$email')";
 
-            $result1 = mysqli_query($conn, $sql);
-            echo $result1;
-            if($result1)  {
-                echo "success";
+            $r=mysqli_query($conn,$sql) or die(mysqli_error($conn));
+            
+            if($r)  {
+                echo "yes";
             } 
             else {
-            echo "fail";
+            echo "no";
             }
      }
     mysqli_close($conn);

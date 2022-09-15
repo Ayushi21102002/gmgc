@@ -2,8 +2,8 @@
 
 if (isset($_POST['pay2'])) {
 
-    $id = $_POST['id'];
-    echo $id;
+    // $id = $_POST['id'];
+    // echo $id;
     // $s_course = $_POST['s_course'];
     $s_branch = $_POST['br'];
     $s_name = $_POST['st'];
@@ -28,7 +28,7 @@ if (isset($_POST['pay2'])) {
     $query = "UPDATE `d2d_inquiry` SET `s_branch`=' $s_branch',`s_name`='$s_name',`s_address`='$s_address',
     `s_contact`='$s_contact',`p_contact`='$p_contact',`s_gender`='$s_gender',`dob`='$dob',`s_ssc`='$s_ssc',
     `ssc_seatno`='$ssc_seatno', `diplo_insti_name`='$diplo_insti_name',`diplo_branch_name`=' $diplo_branch_name',`diplo_p_year`=' $diplo_p_year',
-    `diplo_seatno`='$diplo_seatno',`diplo_cgpa`='$diplo_cgpa',`email`='$email',`password`='$password ',`transaction_id`='0' WHERE id='$id' ";
+    `diplo_seatno`='$diplo_seatno',`diplo_cgpa`='$diplo_cgpa',`email`='$email',`password`='$password ',`transaction_id`='0' WHERE email ='$email' ";
     $result = mysqli_query($conn, $query);
     
     // echo $query;

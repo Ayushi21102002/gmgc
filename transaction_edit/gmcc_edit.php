@@ -2,13 +2,13 @@
 
 if (isset($_POST['trans6'])) {
 
-    $id = $_POST['id'];
-    echo $id;
+    $email = $_POST['email'];
+    // echo $id;
     $trans_id = $_POST['trans_id'];
     echo $trans_id;
     
     $conn = mysqli_connect("localhost", "root", "", "gmgc");
-    $query = "UPDATE `mca_inquiry` SET `transaction_id`='$trans_id' WHERE id='$id'";
+    $query = "UPDATE `mca_inquiry` SET `transaction_id`='$trans_id' WHERE email='$email'";
     $result = mysqli_query($conn, $query);
     
     // echo $query;

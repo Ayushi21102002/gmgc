@@ -68,7 +68,6 @@
                 
                 <div class="col-md-6">
                   
-
                   <select id="my_select" class="form-control">
                     <option>Select Institute</option>
                     <option value="gmit">Gyanmanjari Institute of Technology (GMIT) - 1st Year Degree Engineering</option>
@@ -85,7 +84,7 @@
             </div>
 
             <?php
-
+echo"hello";
 // if (isset($_POST['submit1'])) {
 //   echo"hiii";
 //  $email = $_POST['email'];
@@ -93,12 +92,20 @@
 $con = mysqli_connect("localhost", "root", "", "gmgc");
 if ($con) {
   echo "Connecting1";
+<<<<<<< HEAD
 $q = "SELECT * FROM `be_inquiry` WHERE email='ayu12@gmail.com'";
+=======
+$q = "SELECT * FROM `be_inquiry` WHERE email='ayushi@gmail.com'";
+>>>>>>> ff0e5e92c2e5eac576d682e83c728c836a161666
 // echo $email;
 // echo $q;
 $sql = mysqli_query($con, $q);
   while ($row = mysqli_fetch_array($sql)) {
+<<<<<<< HEAD
     // echo"mansi";
+=======
+    echo"mansi";
+>>>>>>> ff0e5e92c2e5eac576d682e83c728c836a161666
     // $id = $row['id'];
     $s_name = $row['s_name'];
     $s_address = $row['s_address'];
@@ -125,7 +132,7 @@ $sql = mysqli_query($con, $q);
               <label style="color:red;">Note: Token fees for the selected course is 10,000 ₹</label>
               <!-- <form action="gmit_insert.php" method="post"> -->
               <form action="./adm_edit/gmit_edit.php" method="post">
-  <input type="hidden" name="id" value="<?php echo $id; ?>">
+              <input type="hidden" name="email"value="<?php echo $email; ?>">
                 <div class="form-group">
                   <label for="br">Select Branch</label>
                   <select class="form-control" name="br" id="br" required="">
@@ -248,10 +255,15 @@ $sql = mysqli_query($con, $q);
                       <input type="email" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Enter Your Email Address" value="<?php echo $email; ?>">
                     </div>
                   </div>
+<<<<<<< HEAD
                   <input type="hidden" name="email" value="<?php echo $email; ?>">
+=======
+                  
+>>>>>>> ff0e5e92c2e5eac576d682e83c728c836a161666
                   <div class="row" style="margin: 0 2px 0 3px ;">
                     <div class="col-md-6">
                       <div class="form-group">
+                      <input type="hidden" name="email" value="<?php echo $email; ?>">
                           <label for="passwd">Password</label>
                           <input type="password" class="form-control" placeholder="Enter Your Password" name="pass" >
                       </div>
@@ -284,7 +296,7 @@ $sql = mysqli_query($con, $q);
 <?php
 $con = mysqli_connect("localhost", "root", "", "gmgc");
 if ($con) {
-  // echo "Connecting2";
+  echo "Connecting2";
 } else {
   echo "error";
 }
@@ -292,7 +304,7 @@ $q = "SELECT * FROM `d2d_inquiry` WHERE email='abchbhnjh@gmail.com'";
 $sql = mysqli_query($con, $q);
   while ($row = mysqli_fetch_array($sql)) {
     // $sel_cour = $row['s_course'];
-    $id = $row['id'];
+    // $id = $row['id'];
         $sel_branch=$row['s_branch'];
         $name = $row['s_name'];
         $s_address = $row['s_address'];
@@ -316,7 +328,7 @@ $sql = mysqli_query($con, $q);
           <div class="gmitd2d box left-intrsution white;" style="margin-top: 20px; padding-top: 20px; margin-left: 15px; color: black; text-align: left; display: inline-block;">
             <label style="color:red;">Note: Token fees for the selected course is 10,000 ₹</label>
             <form action="./adm_edit/d2d_edit.php" method="post">
-            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="hidden" name="email" value="<?php echo $email; ?>">
               <div class="form-group">
                 <label for="br">Select Branch</label>
                 <select class="form-control" name="br" id="br" required="">
@@ -440,7 +452,7 @@ $sql = mysqli_query($con, $q);
                     <input type="email" class="form-control" name="email" id="jsc" aria-describedby="helpId" placeholder="Enter Your Email Address" value="<?php echo $email; ?>">
                   </div>
                 </div>
-                <input type="hidden" name="id" value="<?php echo $id; ?>">
+                <input type="hidden" name="email" value="<?php echo $email; ?>">
                 <div class="row" style="margin: 0 2px 0 3px;">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -479,7 +491,7 @@ $q = "SELECT * FROM `diplo_inquiry` WHERE email='abchbhnjnjiih@gmail.com'";
 $sql = mysqli_query($con, $q);
   while ($row = mysqli_fetch_array($sql)) {
     // $sel_cour = $row['s_course'];
-    $id = $row['id'];
+    // $id = $row['id'];
     $sel_branch=$row['s_branch'];
     $s_name = $row['s_name'];
     $s_address = $row['s_address'];
@@ -498,7 +510,7 @@ $sql = mysqli_query($con, $q);
           <div class="gmdc box left-intrsution white;" style="margin-top: 20px; padding-top: 20px; margin-left: 29px; width: 96%; color: black; text-align: left; display: none;">
             <label style="color:red;">Note: Token fees for the selected course is 5,000 ₹</label>
             <form action="./adm_edit/gmdc_edit.php" method="post">
-            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="hidden" name="email" value="<?php echo $email; ?>">
               <div class="form-group">
                 <label for="br">Select Branch</label>
                 <select class="form-control" name="br" id="br" required="">
@@ -595,7 +607,7 @@ $sql = mysqli_query($con, $q);
                   </div>
                 </div>
                 </div>
-              <input type="hidden" name="id" value="<?php echo $id; ?>">
+              <input type="hidden" name="email" value="<?php echo $email; ?>">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -637,7 +649,7 @@ $q = "SELECT * FROM `bpharm_inquiry` WHERE email='yash@gmail.com'";
 $sql = mysqli_query($con, $q);
   while ($row = mysqli_fetch_array($sql)) {
     // $sel_cour = $row['s_course'];
-    $id = $row['id'];
+    // $id = $row['id'];
     $sel_branch=$row['s_branch'];
       $sname=$row['s_name'];
       $s_add=$row['s_address'];
@@ -667,7 +679,7 @@ $sql = mysqli_query($con, $q);
           <div class="gmpc box left-intrsution white;" style="margin-top: 20px; padding-top: 20px; margin-left: 29px; width: 96%; color: black; text-align: left; display: none;">
             <label style="color:red;">Note: Token fees for the selected course is 10,000 ₹</label>
             <form action="./adm_edit/gmpc_edit.php" method="post">
-            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="hidden" name="email" value="<?php echo $email; ?>">
               <div class="form-group">
                 <label for="br">Select Branch</label>
                 <select class="form-control" name="br" id="br" required="">
@@ -825,7 +837,7 @@ $sql = mysqli_query($con, $q);
                   </div>
                 </div>
               </div>
-              <input type="hidden" name="id" value="<?php echo $id; ?>">
+              <input type="hidden" name="email" value="<?php echo $email; ?>">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -866,7 +878,7 @@ $q = "SELECT * FROM `bsc_inquiry` WHERE email='abchbhnjnjiih@gmail.com'";
 $sql = mysqli_query($con, $q);
   while ($row = mysqli_fetch_array($sql)) {
     // $sel_cour = $row['s_course'];
-    $id = $row['id'];
+    // $id = $row['id'];
     $sel_branch=$row['s_branch'];
       $sname=$row['s_name'];
       $s_add=$row['s_address'];
@@ -890,7 +902,7 @@ $sql = mysqli_query($con, $q);
           <div class="gmsc box left-intrsution white;" style="margin-top: 20px; padding-top: 20px; margin-left: 29px; width: 96%; color: black; text-align: left; display: none;">
             <label style="color:red;">Note: Token fees for B.Sc. course is 5,000 ₹</label>
             <form action="./adm_edit/gmsc_edit.php" method="post">
-            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="hidden" name="email" value="<?php echo $email; ?>">
               <div class="form-group">
                 <label for="br">Select Branch</label>
                 <select class="form-control" name="br" id="br" required="">
@@ -1019,7 +1031,7 @@ $sql = mysqli_query($con, $q);
                     <input type="email" class="form-control" name="email" id="jsc" aria-describedby="helpId" value="<?php echo $email; ?>" placeholder="Enter Your Email Address">
                   </div>
                 </div>
-                <input type="hidden" name="id" value="<?php echo $id; ?>">
+                <input type="hidden" name="email" value="<?php echo $email; ?>">
                 <div class="row" style="margin: 0 2px 0 3px;">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -1061,7 +1073,7 @@ $q = "SELECT * FROM `mca_inquiry` WHERE email='123@gmail.com'";
 
 $sql = mysqli_query($con, $q);
   while ($row = mysqli_fetch_array($sql)) {
-    $id = $row['id'];
+    // $id = $row['id'];
   $name = $row['s_name'];
   $s_add = $row['s_address'];
   $s_contact = $row['s_contact'];
@@ -1083,7 +1095,7 @@ $sql = mysqli_query($con, $q);
           <div class="gmcc box left-intrsution white;" style="margin-top: 20px; padding-top: 20px; margin-left: 29px; width: 96%; color: black; text-align: left; display: none;">
             <label style="color:red;">Note: Token fees for the selected course is 10,000 ₹</label>
             <form action="./adm_edit/gmcc_edit.php" method="post">
-            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="hidden" name="email" value="<?php echo $email; ?>">
               <div class="form-group">
                 <label for="br">Graduation Course</label>
                 <select class="form-control" name="br" id="br" required="">
@@ -1204,7 +1216,7 @@ $sql = mysqli_query($con, $q);
                     <input type="email" class="form-control" name="email" id="jsc" aria-describedby="helpId" value="<?php echo $email; ?>"placeholder="Enter Your Email Address">
                   </div>
                 </div>
-                <input type="hidden" name="id" value="<?php echo $id; ?>">
+                <input type="hidden" name="email" value="<?php echo $email; ?>">
                 <div class="row" style="margin: 0 2px 0 3px;">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -1241,7 +1253,7 @@ $q = "SELECT * FROM `pg_inquiry` WHERE email='ayushi@gmail.com'";
 
 $sql = mysqli_query($con, $q);
   while ($row = mysqli_fetch_array($sql)) {
-    $id = $row['id'];
+    // $id = $row['id'];
     $name = $row['s_name'];
     $s_add = $row['s_address'];
     $s_contact = $row['s_contact'];
@@ -1259,7 +1271,7 @@ $sql = mysqli_query($con, $q);
           <div class="gmpgc box left-intrsution white;" style="margin-top: 20px; padding-top: 20px; margin-left: 29px; width: 96%; color: black; text-align: left; display: none;">
             <label style="color:red;">Note: Token fees for M.Sc. course is 10,000 ₹</label>
             <form action="./adm_edit/gmpgc_edit.php" method="post">
-               <input type="hidden" name="id" value="<?php echo $id; ?>">
+               <input type="hidden" name="email" value="<?php echo $email; ?>">
               <div class="form-group">
                 <label for="br">Select Branch</label>
                 <select class="form-control" name="br" id="br" required="">
@@ -1360,7 +1372,7 @@ $sql = mysqli_query($con, $q);
                 </div>
               </div>
               
-            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <input type="hidden" name="email" value="<?php echo $email; ?>">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
