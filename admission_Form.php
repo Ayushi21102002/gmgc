@@ -92,14 +92,14 @@
 
 $con = mysqli_connect("localhost", "root", "", "gmgc");
 if ($con) {
-  // echo "Connecting1";
-$q = "SELECT * FROM `be_inquiry` WHERE email='abc@gmail.com'";
+  echo "Connecting1";
+$q = "SELECT * FROM `be_inquiry` WHERE email='ayu12@gmail.com'";
 // echo $email;
 // echo $q;
 $sql = mysqli_query($con, $q);
   while ($row = mysqli_fetch_array($sql)) {
     // echo"mansi";
-    $id = $row['id'];
+    // $id = $row['id'];
     $s_name = $row['s_name'];
     $s_address = $row['s_address'];
   $s_contact = $row['s_contact'];
@@ -248,7 +248,7 @@ $sql = mysqli_query($con, $q);
                       <input type="email" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Enter Your Email Address" value="<?php echo $email; ?>">
                     </div>
                   </div>
-                  <input type="hidden" name="id" value="<?php echo $id; ?>">
+                  <input type="hidden" name="email" value="<?php echo $email; ?>">
                   <div class="row" style="margin: 0 2px 0 3px ;">
                     <div class="col-md-6">
                       <div class="form-group">
