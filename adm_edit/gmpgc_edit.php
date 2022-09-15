@@ -2,7 +2,7 @@
 
 if (isset($_POST['pay7'])) {
 
-    $id = $_POST['id'];
+    // $id = $_POST['id'];
     // echo $id;
     // $s_course = $_POST['s_course'];
     $s_branch = $_POST['br'];
@@ -22,7 +22,7 @@ if (isset($_POST['pay7'])) {
     $conn = mysqli_connect("localhost", "root", "", "gmgc");
     $query = "UPDATE `pg_inquiry` SET `s_branch`='$s_branch',`s_name`='$s_name',`s_address`='$s_address ',
     `s_contact`='$s_contact',`p_contact`='$p_contact',`s_gender`='$s_gender',`dob`='$dob',`bsc_pr`='$bsc_pr',
-    `bsc_main_sub`='$bsc_main_sub',`bsc_p_year`='$bsc_p_year',`email`='$email',`password`='$password',`transaction_id`='0' WHERE id='$id' ";
+    `bsc_main_sub`='$bsc_main_sub',`bsc_p_year`='$bsc_p_year',`email`='$email',`password`='$password',`transaction_id`='0' WHERE email='$email' ";
     $result = mysqli_query($conn, $query);
     
     // echo $query;

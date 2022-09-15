@@ -98,7 +98,7 @@
       <div class="gmit box left-intrsution white;"
         style="margin-top: 20px; padding-top: 20px; margin-left: 15px; color: black; text-align: left; display: none;">
         <!-- <lable style="color:red;">Note: Token fees for the selected course is 10,000 ₹</lable> -->
-        <form action="./insert/be_insert.php" method="post">
+        <form action="./insert/be_insert.php" method="POST">
           <input type="hidden" name="s_course"
             value="Gyanmanjari Institute of Technology (GMIT) - 1st Year Degree Engineering">
           <div class="form-group">

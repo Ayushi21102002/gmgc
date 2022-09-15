@@ -79,11 +79,11 @@ if ($con) {
 } else {
   echo "error";
 }
-$q = "SELECT * FROM `mca_inquiry` WHERE email='$email'";
+$q = "SELECT * FROM `mca_inquiry` WHERE email='khushi@gmail.com'";
 $sql = mysqli_query($con, $q);
   while ($row = mysqli_fetch_array($sql)) {
-    $id = $row['id'];
-    echo $id;
+    // $id = $row['id'];
+    // echo $id;
     $int_name=$row['s_course'];
     $gcourse=$row['g_course'];
   $email = $row['email'];
@@ -111,7 +111,7 @@ $sql = mysqli_query($con, $q);
         <div class="col-4">
             &nbsp;
         </div>
-        <input type="hidden" name="id" value="<?php echo $id; ?>">
+        <input type="hidden" name="email" value="<?php echo $email; ?>">
         <div class="col-8" style="margin-top: 15px; ">
 
             <div class="form-group">
@@ -120,7 +120,7 @@ $sql = mysqli_query($con, $q);
                         <label for="email" style="float:left; font-size:19px; font-weight:bolder;">Email-Id:</label>
                     </div>
 
-                    <input type="hidden" name="id" value="<?php echo $id; ?>">
+                    <input type="hidden" name="email" value="<?php echo $email; ?>">
                     <div class="col-md-8">
                         <span style="display:block; overflow:hidden;">
                             <input type="email" class="form-control" placeholder="Enter Your email" name="email"

@@ -2,7 +2,7 @@
 
 if (isset($_POST['pay4'])) {
 
-    $id = $_POST['id'];
+    // $id = $_POST['id'];
     // echo $id;
     // $s_course = $_POST['s_course'];
     $s_branch = $_POST['br'];
@@ -32,7 +32,7 @@ if (isset($_POST['pay4'])) {
     `s_contact`='$s_contact',`p_contact`='$p_contact',`s_gender`='$s_gender',`dob`='$dob',`s_ssc`='$s_ssc',
     `ssc_seatno`='$ssc_seatno',`s_hsc`='$s_hsc',`hsc_seatno`='$hsc_seatno',`hsc_p_year`='$hsc_p_year',`dpharm_p_year`='$dpharm_p_year',
     `dpharm_mark`='$dpharm_mark',`dpharm_seatno`='$dpharm_seatno',`s_gujcet`='$s_gujcet',`s_neet`='$s_neet',`s_group`='$s_group',
-    `email`='$email',`password`='$password',`transaction_id`='0' WHERE id='$id' ";
+    `email`='$email',`password`='$password',`transaction_id`='0' WHERE email='$email' ";
     $result = mysqli_query($conn, $query);
     
     // echo $query;

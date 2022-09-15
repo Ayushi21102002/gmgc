@@ -2,16 +2,15 @@
 
 if (isset($_POST['trans2'])) {
 
-    $id = $_POST['id'];
-    echo $id;
+    $email = $_POST['email'];
+    // echo $id;
     $trans_id = $_POST['trans_id'];
     echo $trans_id;
     
     $conn = mysqli_connect("localhost", "root", "", "gmgc");
     echo"okkk ";
-    $query = "UPDATE `d2d_inquiry` SET `transaction_id`='$trans_id' WHERE id='$id'";
+    $query = "UPDATE `d2d_inquiry` SET `transaction_id`='$trans_id' WHERE email='$email'";
     $result = mysqli_query($conn, $query);
-    
     // echo $query;
     if ($result) {
         // echo "sucess";

@@ -2,7 +2,7 @@
 
 if (isset($_POST['pay6'])) {
 
-    $id = $_POST['id'];
+    // $id = $_POST['id'];
     // echo $id;
     // $s_course = $_POST['s_course'];
     $s_course = $_POST['br'];
@@ -28,7 +28,7 @@ if (isset($_POST['pay6'])) {
     $query = "UPDATE `mca_inquiry` SET `g_course`='$s_course',`s_name`='$s_name',`s_address`='$s_address',
     `s_contact`='$s_contact',`p_contact`='$p_contact',`s_gender`='$s_gender',`dob`='$dob',`s_ssc`='$s_ssc',
     `ssc_seatno`='$ssc_seatno',`s_hsc`='$s_hsc',`hsc_seatno`='$hsc_seatno',`graduation_pr`=' $graduation_pr',
-    `graduation_p_year`='$graduation_p_year',`cmat`='$cmat',`email`='$email',`password`='$password',`transaction_id`='0' WHERE id='$id' ";
+    `graduation_p_year`='$graduation_p_year',`cmat`='$cmat',`email`='$email',`password`='$password',`transaction_id`='0' WHERE email='$email' ";
     $result = mysqli_query($conn, $query);
     
     // echo $query;
